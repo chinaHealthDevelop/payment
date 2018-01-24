@@ -21,6 +21,6 @@ public class HealthTestController {
         }
 
         //测试分组权限
-        return "id 有误";
+        return "id 有";
     }
 }
