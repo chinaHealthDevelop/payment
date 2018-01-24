@@ -1,6 +1,9 @@
 package com.health.payment.manager.service.impl;
 
+import com.health.payment.manager.entity.TestUser;
+import com.health.payment.manager.mapper.TestUserMapper;
 import com.health.payment.manager.service.DataBaseService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,14 +13,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class DataBaseServiceImpl implements DataBaseService {
 
+    @Autowired
+    private TestUserMapper testUserMapper;
+
     @Override
-    public void query() {
+    public TestUser query(int id) {
         System.out.println("查询信息------");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        return testUserMapper.selectByPrimaryKey(id);
     }
 
     @Override
