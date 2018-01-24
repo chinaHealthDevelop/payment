@@ -8,6 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @auther Administrator
  * @date 2017/9/21
  */
+
+/**
+ * hetaoworld
+ */
 @SpringBootApplication
 @MapperScan("com.health.payment.manager.mapper")
 public class PaymentApplication {
