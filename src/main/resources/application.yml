@@ -25,5 +25,6 @@ spring:
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.health.payment.manager.entity
+pay: test123456
 
 
